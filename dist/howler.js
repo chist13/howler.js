@@ -2128,7 +2128,7 @@
       var parent = self._parent;
 
       // Round up the duration to account for the lower precision in HTML5 Audio.
-      parent._duration = Math.ceil(self._node.duration * 10) / 10;
+      parent._duration = Math.ceil(self._node.duration * 1000) / 1000;
 
       // Setup a sprite if none is defined.
       if (Object.keys(parent._sprite).length === 0) {
